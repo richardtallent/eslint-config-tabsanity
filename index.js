@@ -32,6 +32,7 @@ module.exports = {
 				functions: "ignore",
 			},
 		],
+		"vue/no-v-html": "off",
 		"vue/html-indent": ["warn", "tab"],
 		"vue/max-attributes-per-line": "off",
 		"vue/html-closing-bracket-newline": "never",
