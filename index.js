@@ -8,7 +8,7 @@ module.exports = {
 	},
 	rules: {
 		indent: [
-			"error",
+			"invalid-option-test",
 			"tab",
 			{
 				SwitchCase: 1,
