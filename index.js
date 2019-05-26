@@ -7,17 +7,6 @@ module.exports = {
 		node: true,
 	},
 	rules: {
-		"prettier/prettier": [
-			"warning",
-			{
-				useTabs: true,
-				semi: false,
-				singleQuote: false,
-				bracketSpacing: true,
-				printWidth: 160,
-				trailingComma: "es5",
-			},
-		],
 		indent: [
 			"error",
 			"tab",
@@ -43,7 +32,6 @@ module.exports = {
 				functions: "ignore",
 			},
 		],
-		"vue/no-v-html": "off",
 		"vue/html-indent": ["warn", "tab"],
 		"vue/max-attributes-per-line": "off",
 		"vue/html-closing-bracket-newline": "never",
