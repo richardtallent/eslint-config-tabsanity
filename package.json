@@ -1,10 +1,13 @@
 {
 	"name": "eslint-vue-defaults-tabsanity",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "My personal preferences for linter and formatter settings for Vue-based projects. YMMV. Tabs FTW!",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"eslint-plugin-vue": "^5.2.2"
 	},
 	"author": "richardtallent <richard@tallent.us>",
 	"license": "MIT",
