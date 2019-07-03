@@ -1,20 +1,17 @@
+This is an OPINIONATED set of `package.json` linting and formatting defaults I use for my open-source and
+closed-source work.
 
-This is a HIGHLY-OPINIONATED set of `package.json` defaults I use for my open-source and closed-source work.
+The following dependencies are assumed:
 
-The following plugins are assumed:
+- eslint
+- eslint-config-standard (baseline rules, install as a Vue-CLI plugin rather than npm install)
+- eslint-plugin-vue (adds Vue-specific rules)
+- eslint-config-prettier (turns off eslint standard rules that could conflict with Vue)
+- stylelint
+- stylelint-config-standard
 
-@vue/eslint-config-prettier
-eslint
-eslint-plugin-vue
-stylelint
-stylelint-config-standard
+The Vetur plugin is also assumed, with the HTML Formatter option set to **js-beautfy-html**:
 
-The Vetur plugin is also assumed, with the HTML Formatter option set to NONE. I'd love to use js-beautfy-html, except for this issue:
-
-https://github.com/beautify-web/js-beautify/issues/1678
-https://github.com/vuejs/vetur/issues/1312
-
-This is SUBJECT TO CHANGE AT ANY TIME. I don't really expect anyone else to use this, as it's highly subjective to my personal taste
-in HTML, JS, and CSS formatting. I just did it because I got tired of having to copy and paste settings among all of my repos. But
-if you get value from it, great!
-
+This is SUBJECT TO CHANGE AT ANY TIME. I don't really expect anyone else to use this, as it's highly
+subjective to my personal taste n HTML, JS, and CSS formatting. I just did it because I got tired of
+having to copy and paste settings among all of my repos. But if you get value from it, great!

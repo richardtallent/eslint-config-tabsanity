@@ -1,13 +1,10 @@
 {
 	"name": "eslint-config-tabsanity",
-	"version": "1.0.7",
+	"version": "1.0.11",
 	"description": "My personal preferences for eslint for Vue-based projects. YMMV. Tabs FTW!",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"dependencies": {
-		"eslint-plugin-vue": "^5.2.3"
 	},
 	"author": "richardtallent <richard@tallent.us>",
 	"license": "MIT",
@@ -17,6 +14,7 @@
 		"singleQuote": false,
 		"bracketSpacing": true,
 		"printWidth": 160,
+		"proseWrap": "preserve",
 		"trailingComma": "es5"
 	}
 }
