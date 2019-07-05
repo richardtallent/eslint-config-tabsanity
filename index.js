@@ -3,6 +3,9 @@ const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", 
 module.exports = {
 	extends: ["eslint:recommended", "plugin:vue/recommended", "prettier", "prettier/vue"],
 	root: true,
+	env: {
+		node: true, // Needed for "require" to be recognized  as defined
+	},
 	globals: {
 		Vue: "readable",
 	},
