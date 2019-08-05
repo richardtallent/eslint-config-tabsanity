@@ -1,11 +1,18 @@
 This is an OPINIONATED set of `package.json` linting and formatting defaults I use for my open-source
 and closed-source work.
 
-The following dependencies are assumed:
+This assumes that the Vue eslint plugin has been installed properly. Rather than manually adding the
+packages, do this from the command line (it will edit the package.json as needed), then replace the
+"extends" part of the eslint config with just extending "tabsanity" (which already extends the
+recommended Vue and Prettier rules). Install with:
 
-- eslint (builds on the "eslint:recommended" configuration)
-- eslint-plugin-vue (adds Vue-specific rules, install as a Vue-CLI plugin rather than npm install)
-- eslint-config-prettier (turns off eslint standard rules that could conflict with Vue)
+vue add @vue/cli-plugin-eslint
+
+This project will track with the eslint rules and options as installed through the Vue eslint plugin,
+so don't update eslint, etc., just update the plugin.
+
+Also, install these packages:
+
 - stylelint
 - stylelint-config-standard
 

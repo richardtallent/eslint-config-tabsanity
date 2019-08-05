@@ -1,7 +1,7 @@
-const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", "a", "u", "s", "em", "strong"]
+const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", "a", "u", "s", "em", "strong", "template"]
 
 module.exports = {
-	extends: ["eslint:recommended", "plugin:vue/recommended", "prettier", "prettier/vue"],
+	extends: ["plugin:vue/recommended", "@vue/prettier"],
 	root: true,
 	env: {
 		node: true, // Needed for "require" to be recognized  as defined
@@ -42,7 +42,7 @@ module.exports = {
 
 		// Don't force this, not worth the effort to save on git churn for Vue files since the last line is
 		// almost aways the end of the script or style tag.
-		"eol-last": 0,
+		"eol-last": "off",
 
 		// Yes, we know it can be dangerous. But it's also very useful.
 		"vue/no-v-html": "off",
