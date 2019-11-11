@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-tabsanity",
-	"version": "1.0.17",
+	"version": "1.0.18",
 	"description": "My personal preferences for eslint for Vue-based projects. YMMV. Tabs FTW!",
 	"main": "index.js",
 	"scripts": {

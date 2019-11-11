@@ -1,7 +1,7 @@
-const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", "a", "u", "s", "em", "strong", "template"]
+const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", "a", "u", "s", "em", "strong", "template", "router-link"]
 
 module.exports = {
-	extends: ["plugin:vue/recommended", "@vue/prettier"],
+	extends: ["plugin:vue/recommended"],
 	root: true,
 	env: {
 		node: true, // Needed for "require" to be recognized  as defined
@@ -61,6 +61,18 @@ module.exports = {
 		// ignore certain tags. This makes it difficult to use with simple text and template
 		// {{references}}.
 		"vue/singleline-html-element-content-newline": 0,
+
+		// XHTML FTW!
+		"vue/html-self-closing": [
+			"error",
+			{
+				html: {
+					void: "always",
+					normal: "always",
+					component: "always",
+				},
+			},
+		],
 
 		// For more complex tags, it makes sense to always intent their content under them,
 		// unless the content is very simple.
