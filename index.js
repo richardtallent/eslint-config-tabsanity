@@ -74,6 +74,10 @@ module.exports = {
 			},
 		],
 
+		// Too militant. Some tags, like BR, look best without the space.. Others, like
+		// components, look better with it.
+		"vue/html-closing-bracket-spacing": 0,
+
 		// For more complex tags, it makes sense to always intent their content under them,
 		// unless the content is very simple.
 		"vue/multiline-html-element-content-newline": [
