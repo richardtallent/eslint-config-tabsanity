@@ -47,9 +47,6 @@ module.exports = {
 		// Yes, we know it can be dangerous. But it's also very useful.
 		"vue/no-v-html": "off",
 
-		// TABS FOR LIFE!
-		"vue/html-indent": ["warn", "tab"],
-
 		// This always ends up being arbitrary and makes it difficult to align similar code.
 		// Let prettier's line width limit determine this.
 		"vue/max-attributes-per-line": "off",
@@ -71,12 +68,35 @@ module.exports = {
 					normal: "always",
 					component: "always",
 				},
+				svg: "always",
+				math: "always",
 			},
 		],
 
-		// Too militant. Some tags, like BR, look best without the space.. Others, like
-		// components, look better with it.
-		"vue/html-closing-bracket-spacing": 0,
+		// Spaces are unnecessary.
+		// NOTE: Docs are wrong, it's 1 not "warning" or "warn". Version 5 vs 6 issue?
+		"vue/html-closing-bracket-spacing": [
+			1,
+			{
+				startTag: "never",
+				endTag: "never",
+				selfClosingTag: "any", // Prettier adds these, but I don't really care.
+			},
+		],
+
+		// Mostly the default here, but a warning rather than an error, becuase it's just
+		// not worth fighting weird indent issues just to compile. Also, TABS FOR LIFE!
+		// NOTE: Docs are wrong, it's 1 not "warning" or "warn". Version 5 vs 6 issue?
+		"vue/html-indent": [
+			1,
+			"tab",
+			{
+				attribute: 1,
+				baseIndent: 1,
+				closeBracket: 0,
+				alignAttributesVertically: true,
+			},
+		],
 
 		// For more complex tags, it makes sense to always intent their content under them,
 		// unless the content is very simple.
