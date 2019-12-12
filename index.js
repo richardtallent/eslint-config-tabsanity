@@ -75,14 +75,18 @@ module.exports = {
 
 		// Spaces are unnecessary.
 		// NOTE: Docs are wrong, it's 1 not "warning" or "warn". Version 5 vs 6 issue?
-		"vue/html-closing-bracket-spacing": [
+		// New version also doesn't allow use of "any" and it seems impossible to make Prettier
+		// to STOP putting spaces on self-closing tags, so I'm disabling this rule completely.
+		"vue/html-closing-bracket-spacing": 0,
+		/*
+		[
 			1,
 			{
 				startTag: "never",
 				endTag: "never",
 				selfClosingTag: "any", // Prettier adds these, but I don't really care.
 			},
-		],
+		],*/
 
 		// Mostly the default here, but a warning rather than an error, becuase it's just
 		// not worth fighting weird indent issues just to compile. Also, TABS FOR LIFE!
