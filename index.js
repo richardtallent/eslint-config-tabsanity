@@ -13,14 +13,10 @@ module.exports = {
 		parser: "babel-eslint",
 	},
 	rules: {
-		indent: [
-			"error",
-			"tab",
-			{
-				// Allow alignment of cases
-				SwitchCase: 1,
-			},
-		],
+		// 2020-03-22 Something about the latest ESlint or Vue language plugin or whatever is borking
+		// when this is set to warn or error. Don't really need to lint tabs vs. spaces anyway since
+		// this is handled by Prettier, so disbabling it for now.
+		indent: [0, "tab"],
 		quotes: [
 			"error",
 			"double",
