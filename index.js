@@ -1,7 +1,6 @@
 const ELEMENTS_CONTENT_WRAP_ALLOWED = ["div", "pre", "textarea", "p", "b", "i", "a", "u", "s", "em", "strong", "template", "router-link"]
 
 module.exports = {
-	extends: ["plugin:vue/recommended"],
 	root: true,
 	env: {
 		node: true, // Needed for "require" to be recognized  as defined
